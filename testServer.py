@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # coding:utf-8
 
 import socket
@@ -8,7 +9,7 @@ import re
 from OpenWeb import openWeb
 
 HOST_IP = ""
-HOST_PORT = 16000
+HOST_PORT = 6666
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # 监听端口:

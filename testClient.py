@@ -4,8 +4,8 @@ import socket
 import time
 import sys
 #RPi's IP
-SERVER_IP = "localhost"
-SERVER_PORT = 16000
+SERVER_IP = "vipgz1.idcfengye.com"
+SERVER_PORT = 10085
 
 print("Starting socket: TCP...")
 server_addr = (SERVER_IP, SERVER_PORT)
@@ -14,7 +14,7 @@ socket_tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 while True:
     try:
-        print("Connecting to server @ %s:%d..." %(SERVER_IP, SERVER_PORT))
+        print("Connectchi'fan'maing to server @ %s:%d..." %(SERVER_IP, SERVER_PORT))
         # 建立连接:
         socket_tcp.connect(server_addr)
         #接收欢迎信息
@@ -28,7 +28,7 @@ while True:
 def sendMsg():
     # if sys.argv[1]=='1':
     #     socket_tcp.send(b'open')
-    socket_tcp.send(b'https://google.com')
+    socket_tcp.send(b'https://touchez.cn:3004/doctor_web/html/doctor.html')
 
 
 #发送信息
